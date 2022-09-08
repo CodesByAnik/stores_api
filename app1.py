@@ -16,9 +16,6 @@ api.add_resource(Items, '/Items/<string:name>')
 api.add_resource(UserRegister, '/register')
 api.add_resource(Store, '/Store/<string:name>')
 
-@app.before_first_request
-def create_tables():
-    deb.create_all()
 
 
 if __name__ == '__main__':

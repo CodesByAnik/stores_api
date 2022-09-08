@@ -16,11 +16,11 @@ class Store(Resource):
         if StoreModel.find_store(name):
             return {'message': 'Store already exists in DB'}, 201
 
-        store=StoreModel(name):
+        store = StoreModel(name)
 
         try:
             store.insert()
         except:
             return {'message': 'An error occurred'}, 500
 
-        return store.json()
+        return store.json(), 201
