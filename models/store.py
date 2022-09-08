@@ -1,6 +1,6 @@
 from db import db
 
-class Storemodel(db.Model):
+class StoreModel(db.Model):
 
     __tablename__ = 'stores'
 
