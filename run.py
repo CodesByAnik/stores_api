@@ -1,4 +1,4 @@
-from app1 import app1
+from app1 import app
 from db import db
 
 db.init_app(app)
